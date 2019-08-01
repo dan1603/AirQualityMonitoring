@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "58675190548",
+    "firebase_url": "https://airqualitymonitoring-d0d25.firebaseio.com",
+    "project_id": "airqualitymonitoring-d0d25",
+    "storage_bucket": "airqualitymonitoring-d0d25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58675190548:android:616aded4eb22a13e",
+        "android_client_info": {
+          "package_name": "com.kalashnyk.denys.airqualitymonitoring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58675190548-q89fpb6qjba66sak9e2ua18814kth324.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kalashnyk.denys.airqualitymonitoring",
+            "certificate_hash": "44aae0487d0f8f5ae0824a3ce7a4bc0d2139aa53"
+          }
+        },
+        {
+          "client_id": "58675190548-q30cf9s8pgqhdg8vssqu5d3r1tesrjp2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHbIb1h96O2RAl2CoPR6qgmj5NFRDSOfI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "58675190548-q30cf9s8pgqhdg8vssqu5d3r1tesrjp2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

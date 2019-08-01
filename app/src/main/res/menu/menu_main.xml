@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_list_history"
+        android:icon="@mipmap/ic_menu_white_24dp"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="List History"
+        android:visible="true" />
+    <item
+        android:id="@+id/action_list_files"
+        android:icon="@mipmap/ic_folder_white_24dp"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="List Files"
+        android:visible="true"
+        />
+    <item
+        android:id="@+id/action_help"
+        android:icon="@mipmap/ic_help_white_24dp"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Help"
+        android:visible="true" />
+    <item
+        android:id="@+id/action_sharing"
+        android:icon="@mipmap/ic_share_white_24dp"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Share"
+        android:visible="true" />
+
+</menu>

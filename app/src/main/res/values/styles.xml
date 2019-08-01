@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_toolbar</item>
+        <item name="colorPrimaryDark">@color/color_over_toolbar</item>
+        <item name="colorAccent">@color/color_common_text</item>
+        <item name="android:textColor">@color/dialog_selector_white</item>
+        <item name="android:itemBackground">@color/color_toolbar</item>
+        <item name="popupMenuStyle">@style/MyPopupMenu</item>
+    </style>
+    <style name="MyPopupMenu" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:dropDownHorizontalOffset">-20dp</item>
+        <item name="android:dropDownVerticalOffset">20dp</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyDarkToolbarStyle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:colorBackground">@color/color_common_text</item>
+        <item name="android:textColor">@color/dialog_selector_white</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">#afabad</item>
+        <item name="android:background">#646464</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@color/color_common_text</item>
+    </style>
+</resources>

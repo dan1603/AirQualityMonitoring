@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_common_background">
+        <TextView
+            android:id="@+id/tv_title_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS is settings"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/dialog_selector_white"
+            android:layout_margin="20dp" />
+
+        <TextView
+            android:id="@+id/tv_dialog_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/color_common_text"
+            android:layout_below="@id/tv_title_dialog"
+            android:text="GPS is disabled. Do you want to go to settings menu?"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_dialog_body"
+            android:measureWithLargestChild="true"
+            android:orientation="horizontal"
+            android:paddingTop="0dp">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_dialog_cancel"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:textColor="@color/dialog_selector_blue"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="Cancel" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_dialog_turn_on"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:textColor="@color/dialog_selector_blue"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="Turn on" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress_forgot_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

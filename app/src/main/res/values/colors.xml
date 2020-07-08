@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="color_toolbar">#262626</color>
-    <color name="color_over_toolbar">#19191a</color>
-    <color name="color_common_background">#646464</color>
-    <color name="color_common_text">#afabad</color>
-    <color name="dialog_selector_blue">#4ae3ea</color>
-    <color name="pm10_view_background">#e25de9</color>
-    <color name="pm2_5_view_background">#fcde00</color>
-    <color name="dialog_selector_white">#ffffff</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
 </resources>

@@ -1,145 +1,47 @@
-buildscript {
-    repositories {
-        maven { url 'https://maven.fabric.io/public' }
-    }
-
-    dependencies {
-        classpath 'io.fabric.tools:gradle:1.27.1'
-    }
-}
 apply plugin: 'com.android.application'
-apply plugin: 'io.fabric'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
-repositories {
-    maven { url 'https://maven.fabric.io/public' }
-}
-
-apply plugin: 'me.tatarka.retrolambda'
-apply plugin: 'com.neenbedankt.android-apt'
-apply plugin: 'realm-android'
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 29
+    buildToolsVersion "30.0.0"
+
     defaultConfig {
-        applicationId "com.kalashnyk.denys.airqualitymonitoring"
-        minSdkVersion 17
-        targetSdkVersion 27
+        applicationId "com.kalashnyk.denys"
+        minSdkVersion 16
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
-    }
-    defaultConfig {
-        multiDexEnabled true
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    testCompile 'junit:junit:4.12'
-    //UI
-    compile 'com.android.support:support-v4:25.3.1'
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:design:25.3.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:recyclerview-v7:25.3.1'
-    compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile 'de.hdodenhof:circleimageview:1.2.1'
-    compile 'com.squareup.picasso:picasso:2.5.2'
-    //Graphic
-    compile "com.androidplot:androidplot-core:0.9.8"
-    compile 'com.jjoe64:graphview:4.2.1'
-    //Dagger 2
-    compile 'com.google.dagger:dagger:2.7'
-    compile 'com.jakewharton:butterknife:8.4.0'
-    provided 'com.google.dagger:dagger-compiler:2.7'
-    provided 'org.glassfish:javax.annotation:10.0-b28'
-//    compile 'com.google.auto.factory:auto-factory:1.0-beta3'
-    //APT
-    apt 'com.jakewharton:butterknife-compiler:8.4.0'
-    //Model
-    compile 'com.google.guava:guava:19.0'
-    compile 'com.google.code.gson:gson:2.8.0'
-    //AutoValue
-    provided 'com.ryanharter.auto.value:auto-value-gson:0.4.5'
-    //Logs lib
-    compile 'com.jakewharton.timber:timber:4.3.1'
-    //Writing file CSV
-    compile 'net.sf.supercsv:super-csv:2.2.1'
-    //Rx
-    compile 'io.reactivex:rxandroid:1.2.1'
-    compile 'io.reactivex:rxjava:1.2.1'
-    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
-    //Auth Social
-    compile 'com.facebook.android:facebook-android-sdk:4.1.0'
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.1.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-    compile('com.twitter.sdk.android:twitter:1.13.1@aar') {
-        transitive = true;
-    }
-    compile('com.crashlytics.sdk.android:crashlytics:2.7.0@aar') {
-        transitive = true;
-    }
-    // for kml
-    compile('org.simpleframework:simple-xml:2.7.1'){
-        exclude module: 'stax-api'
-        exclude module: 'xpp3'
-    }
-    compile project(path: ':MPChartLib')
-    compile project(path: ':usbSerialForAndroid')
 }
-apply plugin: 'com.google.gms.google-services'
-
-//compile fileTree(dir: 'libs', include: ['*.jar'])
-//androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-//    exclude group: 'com.android.support', module: 'support-annotations'
-//})
-//testCompile 'junit:junit:4.12'
-////UI
-//compile 'com.android.support:appcompat-v7:25.3.1'
-//compile 'com.android.support:design:25.3.1'
-//compile 'com.android.support.constraint:constraint-layout:1.0.2'
-//compile 'com.android.support:recyclerview-v7:25.3.1'
-//compile 'com.github.bumptech.glide:glide:3.7.0'
-//compile "com.androidplot:androidplot-core:0.9.8"
-//compile 'de.hdodenhof:circleimageview:1.2.1'
-//compile 'com.squareup.picasso:picasso:2.5.2'
-////Dagger 2
-//compile 'com.google.dagger:dagger:2.7'
-//compile 'com.jakewharton:butterknife:8.4.0'
-//provided 'com.google.dagger:dagger-compiler:2.7'
-//provided 'org.glassfish:javax.annotation:10.0-b28'
-////    compile 'com.google.auto.factory:auto-factory:1.0-beta3'
-////APT
-//apt 'com.jakewharton:butterknife-compiler:8.4.0'
-////Model
-//compile 'com.google.guava:guava:19.0'
-//compile 'com.google.code.gson:gson:2.8.0'
-////AutoValue
-//provided 'com.ryanharter.auto.value:auto-value-gson:0.4.5'
-////Logs lib
-//compile 'com.jakewharton.timber:timber:4.3.1'
-////Rx
-//
-//compile 'io.reactivex:rxandroid:1.2.1'
-//compile 'io.reactivex:rxjava:1.2.1'
-//compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
-////Auth Social
-//compile 'com.facebook.android:facebook-android-sdk:4.23.+'
-//compile('com.twitter.sdk.android:twitter:1.13.1@aar') {
-//    transitive = true;
-//}
-//compile('com.crashlytics.sdk.android:crashlytics:2.7.0@aar') {
-//    transitive = true;
-//}

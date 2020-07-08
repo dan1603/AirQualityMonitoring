@@ -1,26 +1,3 @@
 <resources>
-    <string name="app_name">AirLogger</string>
-    <!--<string name="google_api_key">AIzaSyA3mkBnMvPD8UxqmYrcLdCm-ifRFxz2c8s</string>-->
-    <string name="facebook_app_id">124173851581466</string>
-    <string name="fb_login_protocol_scheme">fb124173851581466</string>
-    <string name="facebook_scope_profile">public_profile</string>
-    <string name="facebook_scope_user_friends">user_friends</string>
-    <string name="twitter_consumer_key">Yc2ma40I8hDW8PdQr2tpJFLp4</string>
-    <string name="twitter_consumer_secret">SA3DIQGhxpBYj4cvJFJF1xMaucdhnTMQ0VmXjqEpV8Aasm1vcy</string>
-    <string name="instagram_client_id">46f5101ac1974ddbaa4181a353bc2ac5</string>
-    <string name="instagram_secret_key">05d2ff45a346477fae6a89db1056997a</string>
-    <string name="instagram_web_site">http://obscuralight.dp.ua</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="help_url">https://airlogger.de/the-mobile-particle-matter-logger/</string>
-    <string name="menu_list">  List History </string>
-    <string name="menu_list_files">  List Files</string>
-    <string name="menu_help">  Help</string>
-    <string name="menu_sharing">  Sharing</string>
-    <string name="error_text_no_internet">No internet connection</string>
-    <string name="error_text_facebook">Facebook error</string>
-    <string name="error_text_twitter">Twitter error</string>
-    <string name="create_file_xml">XML file saved or updated</string>
-    <string name="create_file_csv">CSV file saved or updated</string>
-    <string name="create_file_kml">KML file saved or updated</string>
-    <string name="create_file_error">Empty list can not be written to a file</string>
+    <string name="app_name">My Application</string>
 </resources>

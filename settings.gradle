@@ -1,1 +1,4 @@
-include ':app', ':MPChartLib', ':usbSerialForAndroid'
+include ':MPChartLib'
+include ':usbSerialForAndroid'
+include ':app'
+rootProject.name = "airqualitymonitoring"

@@ -1,3 +1,6 @@
+include ':usecases'
+include ':repository'
+include ':data_source'
 include ':MPChartLib'
 include ':usbSerialForAndroid'
 include ':app'

@@ -1,0 +1,91 @@
+ext {
+    androidx = [
+            paging: "androidx.paging:paging-runtime:2.1.0",
+            annotation: "androidx.annotation:annotation:1.1.0",
+            appcompat: "androidx.appcompat:appcompat:1.1.0",
+            recyclerview: "androidx.recyclerview:recyclerview:1.0.0",
+            cardview: "androidx.cardview:cardview:1.0.0",
+            constraintlayout: "androidx.constraintlayout:constraintlayout:1.1.3",
+            material: "com.google.android.material:material:1.0.0",
+            browser: "androidx.browser:browser:1.0.0",
+            multidex: "androidx.multidex:multidex:2.0.1",
+            legacy: "androidx.legacy:legacy-support-v4:1.0.0",
+            core_ktx: "androidx.core:core-ktx:1.1.0",
+    ]
+    firebase = [
+            analytics: "com.google.firebase:firebase-analytics:17.4.1",
+            crashlytics: "com.google.firebase:firebase-crashlytics:17.0.0",
+            cloudmessaging: "com.google.firebase:firebase-messaging:20.1.7",
+    ]
+    kotlin = [
+            reflect: "org.jetbrains.kotlin:kotlin-reflect:1.3.41",
+            jdk7: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}",
+            jdk8: "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlin_version}"
+    ]
+    dagger = [
+            main: "com.google.dagger:dagger:2.15",
+            compiler: "com.google.dagger:dagger-compiler:2.15",
+    ]
+    room = [
+            runtime: "androidx.room:room-runtime:2.1.0",
+            compiler: "androidx.room:room-compiler:2.1.0",
+    ]
+    reactivex = [
+            rxkotlin: "io.reactivex.rxjava2:rxkotlin:2.0.0",
+            rxandroid: "io.reactivex.rxjava2:rxandroid:2.1.1",
+            rxjava: "io.reactivex.rxjava2:rxjava:2.2.7",
+    ]
+    google = [
+            gson: "com.google.code.gson:gson:2.8.6",
+            guava: "com.google.guava:guava:20.0",
+            maps: "com.google.android.gms:play-services-maps:17.0.0",
+            location: "com.google.android.gms:play-services-location:17.0.0",
+    ]
+    glide = [
+            main: "com.github.bumptech.glide:glide:4.8.0",
+            compiler: "com.github.bumptech.glide:compiler:4.8.0",
+    ]
+    retrofit = [
+            retrofit2: "com.squareup.retrofit2:retrofit:2.3.0",
+            gson: "com.squareup.retrofit2:converter-gson:2.3.0",
+            moshi: "com.squareup.retrofit2:converter-moshi:2.3.0",
+            rxjava: "com.squareup.retrofit2:adapter-rxjava2:2.3.0",
+    ]
+    nashmura = [
+            smoothscroller: "com.nshmura:snappysmoothscroller:1.0.0",
+    ]
+    okhttp = [
+            interceptor: "com.squareup.okhttp3:logging-interceptor:3.8.1",
+    ]
+    apache = [
+            commons: "org.apache.commons:commons-lang3:3.5",
+    ]
+    lifecycle = [
+            extensions: "androidx.lifecycle:lifecycle-extensions:2.1.0",
+            common: "androidx.lifecycle:lifecycle-common-java8:2.1.0",
+    ]
+    customviews = [
+            pinentryedittext: "com.alimuzaffar.lib:pinentryedittext:2.0.6",
+            countrypicker: "com.hbb20:ccp:2.3.7",
+            datepicker: "com.wdullaer:materialdatetimepicker:4.2.3",
+            daterange: "com.savvi.datepicker:rangepicker:1.3.0",
+            vpindicator: "com.romandanylyk:pageindicatorview:1.0.3",
+            camera: "com.otaliastudios:cameraview:2.6.2",
+    ]
+    utils = [
+            emoji: "com.vdurmont:emoji-java:5.1.1",
+            imagepicker: "com.github.dhaval2404:imagepicker:1.7.1",
+            paris: "com.airbnb.android:paris:1.4.0",
+            paris_processor: "com.airbnb.android:paris-processor:1.4.0",
+            dexter: "com.karumi:dexter:4.2.0",
+            fondy: "com.cloudipsp:android:+",
+    ]
+    xmpp = [
+            smack_android: "org.igniterealtime.smack:smack-android:4.3.4",
+            smack_tcp: "org.igniterealtime.smack:smack-tcp:4.3.4",
+            smack_im: "org.igniterealtime.smack:smack-im:4.3.4",
+            smack_android_ext: "org.igniterealtime.smack:smack-android-extensions:4.2.0",
+            smack_ext: "org.igniterealtime.smack:smack-extensions:4.2.2",
+            smack_experimental: "org.igniterealtime.smack:smack-experimental:4.2.0",
+    ]
+}

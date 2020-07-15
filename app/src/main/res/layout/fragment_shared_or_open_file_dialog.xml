@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/splash_background">
+        <TextView
+            android:id="@+id/tv_dialog_share_or_open_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_option"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/tv_dialog_share_or_open_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/text_color_black"
+            android:layout_below="@id/tv_dialog_share_or_open_title"
+            android:text="@string/do_you_want_share_file_or_nopen_file_and_watch_content"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_dialog_share_or_open_body"
+            android:measureWithLargestChild="true"
+            android:orientation="horizontal"
+            android:paddingTop="0dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_dialog_share_or_open_cancel"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:textColor="@color/soft_blue"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/cancel" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_dialog_share_or_open_share"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:textColor="@color/soft_blue"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/share" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_dialog_share_or_open_open"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:textColor="@color/soft_blue"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/open" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress_forgot_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

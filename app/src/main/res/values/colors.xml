@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#6b8de5</color>
+    <color name="colorPrimaryDark">#5671b7</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhiteTransparent">#CCFFFFFF</color>
+    <color name="grey_brown">#424242</color>
+    <color name="soft_blue">#6b8de5</color>
+    <color name="dark_blue">#304c95</color>
+    <color name="cool_grey">#bebec1</color>
+    <color name="ice_blue">#e4f5ff</color>
+    <color name="light_purple">#ba5ade</color>
+    <color name="turtle_green">#77b04d</color>
+    <color name="dark_peach">#e28a4f</color>
+    <color name="bright_sky_blue">#1fc9ff</color>
+    <color name="black_38">#61000000</color>
+    <color name="bottom_inactive">#d2ddf7</color>
+    <color name="splash_background">#5478d6</color>
+
+    <color name="text_color_black">#cc191c2a</color>
+    <color name="text_color_blue">#4b6ec9</color>
+    <color name="text_color_label">#d5e2f7</color>
+    <color name="light_grey">#b3ffffff</color>
+    <color name="error_color">#ff9595</color>
+    <color name="dark_error_color">#dec92d2d</color>
+    <color name="hint_color">#8a8c98</color>
+    <color name="color_light_gray">#D5D5D5</color>
 </resources>

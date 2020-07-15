@@ -1,11 +1,59 @@
 <resources>
 
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="NoTittleBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/AlertButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/AlertButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/AlertButtonStyle</item>
+    </style>
+
+    <style name="AlertButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="AgreeCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="colorControlActivated">@color/colorWhite</item>
+        <item name="colorControlHighlight">@color/colorWhite</item>
+    </style>
+    <style name="EditTextCommonStyle" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/soft_blue</item>
+        <item name="colorControlActivated">@color/soft_blue</item>
+        <item name="android:backgroundTint">@color/soft_blue</item>
+    </style>
+    <style name="TextInputLayout">
+        <item name="android:textColorHint">@color/hint_color</item>
+        <item name="android:colorControlHighlight">@color/hint_color</item>
+        <item name="colorControlNormal">@color/soft_blue</item>
+        <item name="android:colorActivatedHighlight">@color/soft_blue</item>
+        <item name="android:colorControlActivated">@color/soft_blue</item>
+        <item name="android:backgroundTint">@color/soft_blue</item>
+        <item name="hintTextAppearance">@style/TextInputLayoutHint</item>
+    </style>
+
+    <style name="TextInputLayoutHint">
+        <item name="colorAccent">@color/text_color_black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/soft_blue</item>
+    </style>
+
+    <style name="TextStyleItemEventDateTime">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/grey_brown</item>
     </style>
 
 </resources>

@@ -1,3 +1,37 @@
 <resources>
     <string name="app_name">My Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="do_you_really_want_to_delete_all_files_this_operation_can_not_be_undone">Do you really want to delete all files? This operation can not be undone.</string>
+    <string name="do_you_really_want_to_delete_nthis_operation_can_not_be_undone">Do you really want to delete ?\nThis operation can not be undone.</string>
+    <string name="choose_option">Choose option</string>
+    <string name="do_you_want_share_file_or_nopen_file_and_watch_content">Do you want share file or\nopen file and watch content?</string>
+    <string name="share">Share</string>
+    <string name="open">Open</string>
+    <string name="address_date_time">Address, date, time</string>
+    <string name="edit_list_n_history">Edit list\n history</string>
+    <string name="delete_all">DELETE ALL</string>
+    <string name="do_you_really_want_to_delete_all_the_items_this_operation_can_not_be_undone">Do you really want to delete all the items? This operation can not be undone.</string>
+    <string name="delete">Delete</string>
+    <string name="status">Status</string>
+    <string name="gps_accuracy_10m">GPS (accuracy 10m)</string>
+    <string name="sensor">Sensor</string>
+    <string name="turn_on_nsensor">Turn on\nSensor</string>
+    <string name="turn_off_nsensor">Turn Off\nSensor</string>
+    <string name="pm10">PM10</string>
+    <string name="_0">0</string>
+    <string name="pm2_5">PM2.5</string>
+    <string name="with_n_gps_data">With \n GPS data</string>
+    <string name="record">RECORD</string>
+    <string name="without_n_gps_data">Without \n GPS data</string>
+    <string name="event">EVENT</string>
+    <string name="write_log">Write log</string>
+    <string name="gps_is_settings">GPS is settings</string>
+    <string name="gps_is_disabled_do_you_want_to_go_to_settings_menu">GPS is disabled. Do you want to go to settings menu?</string>
+    <string name="turn_on">Turn on</string>
+    <string name="choose_social_for_sharing">Choose social for sharing</string>
+    <string name="choose_type_file">Choose type file</string>
+    <string name="close">Close</string>
+    <string name="attention">Attention!</string>
+    <string name="cancel">Cancel</string>
 </resources>

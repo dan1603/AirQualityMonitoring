@@ -1,76 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <RelativeLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/splash_background">
+        android:layout_height="match_parent">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/rl_list_delete_all_files">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_list_files"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/rl_list_delete_all_files"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_alignParentBottom="true"
-            android:background="?selectableItemBackgroundBorderless">
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/text_color_black" />
+            android:background="@color/splash_background">
 
             <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/rl_list_delete_all_files">
 
-                <ImageView
-                    android:id="@+id/iv_list_delete_all_files"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_list_files"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_list_delete_all_files"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:background="?selectableItemBackgroundBorderless">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/text_color_black" />
+
+                <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_delete_black_24dp" />
+                    android:layout_centerInParent="true">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="5dp"
-                    android:layout_toRightOf="@+id/iv_list_delete_all_files"
-                    android:text="@string/delete_all"
-                    android:textColor="@color/soft_blue"
-                    android:layout_marginStart="5dp"
-                    android:layout_toEndOf="@+id/iv_list_delete_all_files" />
+                    <ImageView
+                        android:id="@+id/iv_list_delete_all_files"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_delete_black_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toEndOf="@+id/iv_list_delete_all_files"
+                        android:layout_toRightOf="@+id/iv_list_delete_all_files"
+                        android:text="@string/delete_all"
+                        android:textColor="@color/soft_blue" />
+                </RelativeLayout>
             </RelativeLayout>
         </RelativeLayout>
-    </RelativeLayout>
 
 
-    <RelativeLayout
-        android:id="@+id/progress_layout_list_files"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/splash_background"
-        android:orientation="vertical"
-        android:visibility="gone">
+        <RelativeLayout
+            android:id="@+id/progress_layout_list_files"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/splash_background"
+            android:orientation="vertical"
+            android:visibility="gone">
 
-        <ProgressBar
-            android:id="@+id/progress_list_files"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_centerInParent="true"
-            android:visibility="gone" />
-    </RelativeLayout>
+            <ProgressBar
+                android:id="@+id/progress_list_files"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
 
-</FrameLayout>
+    </FrameLayout>
+</layout>

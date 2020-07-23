@@ -11,6 +11,8 @@ ext {
             multidex: "androidx.multidex:multidex:2.0.1",
             legacy: "androidx.legacy:legacy-support-v4:1.0.0",
             core_ktx: "androidx.core:core-ktx:1.1.0",
+            navigation: "androidx.navigation:navigation-fragment-ktx:2.3.0",
+            navigation_ui: "androidx.navigation:navigation-ui-ktx:2.3.0"
     ]
     firebase = [
             analytics: "com.google.firebase:firebase-analytics:17.4.1",
@@ -30,6 +32,7 @@ ext {
             runtime: "androidx.room:room-runtime:2.1.0",
             compiler: "androidx.room:room-compiler:2.1.0",
     ]
+
     reactivex = [
             rxkotlin: "io.reactivex.rxjava2:rxkotlin:2.0.0",
             rxandroid: "io.reactivex.rxjava2:rxandroid:2.1.1",

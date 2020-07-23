@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'androidx.navigation.safeargs'
 apply from: '../dependencies.gradle'
 
 
@@ -37,6 +38,7 @@ android {
     dataBinding { enabled = true }
 }
 
+
 dependencies {
     implementation 'com.android.support:multidex:1.0.3'
     api fileTree(include: ['*.jar'], dir: 'libs')
@@ -55,6 +57,8 @@ dependencies {
     api androidx.constraintlayout
     api androidx.multidex
     api androidx.legacy
+    api androidx.navigation
+    api androidx.navigation_ui
     // ReactiveX
     api reactivex.rxkotlin
     api reactivex.rxandroid

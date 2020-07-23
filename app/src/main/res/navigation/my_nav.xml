@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.kalashnyk.denys.main_operation.fragments.main_fragment.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/actionListFilesFragment"
+            app:destination="@id/listFilesFragment" />
+        <action
+            android:id="@+id/actionListFragment"
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/dialogs_action"
+            app:destination="@id/deleteAllFilesDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFilesFragment"
+        android:name="com.kalashnyk.denys.main_operation.fragments.list_files_fragment.ListFilesFragment"
+        android:label="ListFilesFragment" />
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.kalashnyk.denys.main_operation.fragments.list_history_fragment.ListFragment"
+        android:label="ListFragment" />
+    <fragment
+        android:id="@+id/deleteAllFilesDialog"
+        android:name="com.kalashnyk.denys.main_operation.fragments.list_files_fragment.delete_all_items.DeleteAllFilesDialog"
+        android:label="DeleteAllFilesDialog" >
+        <action
+            android:id="@+id/all_items_action"
+            app:destination="@id/deleteAllItemsDialog" />
+        <action
+            android:id="@+id/to_main_fragment_action"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deleteAllItemsDialog"
+        android:name="com.kalashnyk.denys.main_operation.fragments.list_history_fragment.delete_dialog.delete_all_items.DeleteAllItemsDialog"
+        android:label="DeleteAllItemsDialog" >
+        <action
+            android:id="@+id/all_files_dialog"
+            app:destination="@id/deleteAllFilesDialog" />
+    </fragment>
+</navigation>

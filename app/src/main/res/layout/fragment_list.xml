@@ -1,193 +1,198 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".main_operation.fragments.list_history_fragment.ListFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <RelativeLayout
-
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/splash_background">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:id="@+id/header"
-            android:background="@color/splash_background"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="1dp"
-                android:orientation="horizontal">
-
-                <RelativeLayout
-                    android:id="@+id/ll_item_list_title_address"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/tv_item_list_address"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-                        android:text="@string/address_date_time"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                </RelativeLayout>
-
-                <View
-                    android:id="@+id/v_item_list_pm10"
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/text_color_black" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="5">
-
-                    <TextView
-                        android:id="@+id/title_pm10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-                        android:text="@string/pm10"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                </RelativeLayout>
-
-                <View
-                    android:id="@+id/v_item_list_kml_file"
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/text_color_black" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="5">
-
-                    <TextView
-                        android:id="@+id/title_pm2_5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-                        android:text="@string/pm2_5"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-                </RelativeLayout>
-
-                <View
-                    android:id="@+id/v_item_list_delete"
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/text_color_black" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="5"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_centerHorizontal="true"
-                        android:text="@string/edit_list_n_history"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="10sp"
-                        android:textStyle="bold"
-                        tools:ignore="SmallSp" />
-                </RelativeLayout>
-
-            </LinearLayout>
-
-            <View
-                android:id="@+id/v_item_comment_divider_up"
-                android:layout_width="wrap_content"
-                android:layout_height="1dp"
-                android:layout_alignParentBottom="true"
-                android:background="@color/text_color_black" />
-
-        </RelativeLayout>
+        tools:context=".main_operation.fragments.list_history_fragment.ListFragment">
 
         <RelativeLayout
+
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/header"
-            android:layout_above="@+id/rl_list_delete_all">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_list_files"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/rl_list_delete_all"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_alignParentBottom="true"
-            android:background="?selectableItemBackgroundBorderless">
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/text_color_black" />
+            android:background="@color/splash_background">
 
             <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true">
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/splash_background"
+                android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/iv_list_delete_all"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/ll_item_list_title_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_item_list_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/address_date_time"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/v_item_list_pm10"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_color_black" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5">
+
+                        <TextView
+                            android:id="@+id/title_pm10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/pm10"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/v_item_list_kml_file"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_color_black" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5">
+
+                        <TextView
+                            android:id="@+id/title_pm2_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/pm2_5"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/v_item_list_delete"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_color_black" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/edit_list_n_history"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            tools:ignore="SmallSp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/v_item_comment_divider_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/text_color_black" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/rl_list_delete_all"
+                android:layout_below="@+id/header">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_list_files"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_list_delete_all"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:background="?selectableItemBackgroundBorderless">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/text_color_black" />
+
+                <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_delete_black_24dp" />
+                    android:layout_centerInParent="true">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="5dp"
-                    android:layout_toRightOf="@+id/iv_list_delete_all"
-                    android:text="@string/delete_all"
-                    android:textColor="@color/soft_blue"
-                    android:layout_marginStart="5dp"
-                    android:layout_toEndOf="@+id/iv_list_delete_all" />
+                    <ImageView
+                        android:id="@+id/iv_list_delete_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_delete_black_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toEndOf="@+id/iv_list_delete_all"
+                        android:layout_toRightOf="@+id/iv_list_delete_all"
+                        android:text="@string/delete_all"
+                        android:textColor="@color/soft_blue" />
+                </RelativeLayout>
             </RelativeLayout>
         </RelativeLayout>
-    </RelativeLayout>
 
 
-    <RelativeLayout
-        android:id="@+id/progress_layout_list"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/splash_background"
-        android:orientation="vertical"
-        android:visibility="gone">
+        <RelativeLayout
+            android:id="@+id/progress_layout_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/splash_background"
+            android:orientation="vertical"
+            android:visibility="gone">
 
-        <ProgressBar
-            android:id="@+id/progress_list"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_centerInParent="true"
-            android:visibility="gone" />
-    </RelativeLayout>
+            <ProgressBar
+                android:id="@+id/progress_list"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
 
-</FrameLayout>
+    </FrameLayout>
+</layout>

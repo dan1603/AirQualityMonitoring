@@ -68,6 +68,7 @@ dependencies {
     api lifecycle.common
     // Room
     api room.runtime
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
     kapt room.compiler
     // Dagger
     api dagger.main
@@ -80,6 +81,12 @@ dependencies {
     api apache.commons
     // Dexter
     api utils.dexter
+    implementation('com.twitter.sdk.android:twitter:3.3.0@aar') {
+        transitive = true
+    }
+    implementation('com.twitter.sdk.android:twitter-core:3.3.0@aar') {
+        transitive = true;
+    }
 
 
 }

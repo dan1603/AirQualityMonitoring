@@ -8,15 +8,15 @@
         style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/splash_background">
+        android:background="@color/color_common_background">
         <TextView
             android:id="@+id/tv_title_dialog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/gps_is_settings"
+            android:text="GPS is settings"
             android:textStyle="bold"
             android:textSize="16sp"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/dialog_selector_white"
             android:layout_margin="20dp" />
 
         <TextView
@@ -25,9 +25,9 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:textColor="@color/text_color_black"
+            android:textColor="@color/color_common_text"
             android:layout_below="@id/tv_title_dialog"
-            android:text="@string/gps_is_disabled_do_you_want_to_go_to_settings_menu"
+            android:text="GPS is disabled. Do you want to go to settings menu?"
             android:textSize="14sp" />
 
         <LinearLayout
@@ -44,19 +44,19 @@
                 android:id="@+id/btn_dialog_cancel"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
-                android:textColor="@color/soft_blue"
+                android:textColor="@color/dialog_selector_blue"
                 android:layout_height="wrap_content"
                 android:layout_weight="1.0"
-                android:text="@string/cancel" />
+                android:text="Cancel" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_dialog_turn_on"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
-                android:textColor="@color/soft_blue"
+                android:textColor="@color/dialog_selector_blue"
                 android:layout_height="wrap_content"
                 android:layout_weight="1.0"
-                android:text="@string/turn_on" />
+                android:text="Turn on" />
         </LinearLayout>
     </RelativeLayout>
 

@@ -21,14 +21,14 @@ class DeleteAllItemsDialog : DialogFragment() {
         return inflater.inflate(R.layout.fragment_delete_all_items_dialog, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        btn_dialog_cancel.setOnClickListener {
-            val action = DeleteAllItemsDialogDirections.allFilesDialog()
-            Navigation.findNavController(it).navigate(action)
-        }
-
-    }
+//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+//        super.onViewCreated(view, savedInstanceState)
+//
+//        btn_dialog_cancel.setOnClickListener {
+//            val action = DeleteAllItemsDialogDirections.allFilesDialog()
+//            Navigation.findNavController(it).navigate(action)
+//        }
+//
+//    }
 
 }

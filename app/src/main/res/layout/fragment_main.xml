@@ -22,44 +22,39 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
-                    android:text="@string/status"
-                    android:textColor="@color/text_color_black"
+                    android:text="Status"
+                    android:textColor="@color/color_common_text"
                     android:textSize="14sp" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/iv_main_header_circle_status_gps"
                     android:layout_width="10dp"
                     android:layout_height="10dp"
-                    android:layout_alignTop="@+id/iv_main_header_circle_status_sensor"
-                    android:layout_marginStart="30dp"
                     android:layout_marginLeft="30dp"
+                    android:background="@drawable/status_sensor"
+                    android:layout_alignTop="@+id/iv_main_header_circle_status_sensor"
                     android:layout_toEndOf="@+id/tv_main_header_status"
-                    android:layout_toRightOf="@+id/tv_main_header_status"
-                    android:background="@drawable/status_sensor" />
+                    android:layout_marginStart="30dp"
+                    android:layout_toRightOf="@+id/tv_main_header_status" />
                 <!--android:src="@drawable/circle_view"-->
                 <TextView
                     android:id="@+id/tv_main_header_circle_status_gps"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginStart="15dp"
                     android:layout_marginLeft="15dp"
-                    android:layout_toEndOf="@+id/iv_main_header_circle_status_gps"
                     android:layout_toRightOf="@+id/iv_main_header_circle_status_gps"
-                    android:text="@string/gps_accuracy_10m"
-                    android:textColor="@color/text_color_black" />
+                    android:text="GPS (accuracy 10m)"
+                    android:textColor="@color/color_common_text" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/iv_main_header_circle_status_sensor"
                     android:layout_width="10dp"
                     android:layout_height="10dp"
                     android:layout_centerVertical="true"
-                    android:layout_marginStart="30dp"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="3dp"
-                    android:layout_toEndOf="@+id/tv_main_header_circle_status_gps"
                     android:layout_toRightOf="@+id/tv_main_header_circle_status_gps"
                     android:background="@drawable/status_sensor" />
 
@@ -68,12 +63,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginStart="15dp"
                     android:layout_marginLeft="15dp"
-                    android:layout_toEndOf="@+id/iv_main_header_circle_status_sensor"
                     android:layout_toRightOf="@+id/iv_main_header_circle_status_sensor"
-                    android:text="@string/sensor"
-                    android:textColor="@color/text_color_black" />
+                    android:text="Sensor"
+                    android:textColor="@color/color_common_text" />
 
 
             </RelativeLayout>
@@ -83,7 +76,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_below="@+id/rl_main_header"
-                android:background="@color/text_color_black" />
+                android:background="@color/color_common_text" />
 
             <LinearLayout
                 android:id="@+id/ll_current_layout"
@@ -100,17 +93,16 @@
                     android:layout_gravity="center_vertical"
                     android:background="@null"
                     android:checked="false"
-                    android:text="@string/sensor"
+                    android:text="Sensor"
                     android:textAllCaps="false"
-                    android:textOff="@string/turn_on_nsensor"
-                    android:textOn="@string/turn_off_nsensor" />
+                    android:textOff="Turn on\nSensor"
+                    android:textOn="Turn Off\nSensor" />
 
 
                 <RelativeLayout
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginStart="15dp"
                     android:layout_marginLeft="15dp"
                     android:background="@drawable/circle_mp10">
 
@@ -119,9 +111,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:text="@string/_0"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textSize="12sp" />
                 </RelativeLayout>
 
 
@@ -130,16 +122,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginStart="15dp"
                     android:layout_marginLeft="15dp"
-                    android:text="@string/pm10"
-                    android:textColor="@color/text_color_black" />
+                    android:text="PM10"
+                    android:textColor="@color/color_common_text" />
 
                 <RelativeLayout
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginStart="30dp"
                     android:layout_marginLeft="30dp"
                     android:background="@drawable/circle_mp2_5">
 
@@ -148,9 +138,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:text="@string/_0"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textSize="12sp" />
                 </RelativeLayout>
 
 
@@ -159,11 +149,25 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginStart="15dp"
                     android:layout_marginLeft="15dp"
-                    android:text="@string/pm2_5"
-                    android:textColor="@color/text_color_black" />
+                    android:text="PM2.5"
+                    android:textColor="@color/color_common_text" />
             </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/rl_main_footer"
+                android:layout_below="@+id/ll_current_layout"
+                android:paddingLeft="-10dp"
+                android:paddingTop="-10dp">
+
+<!--                <com.jjoe64.graphview.GraphView-->
+<!--                    android:id="@+id/graph"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="bottom" />-->
+            </RelativeLayout>
 
 
             <RelativeLayout
@@ -177,7 +181,7 @@
                     android:id="@+id/v_main_footer_divider"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/text_color_black" />
+                    android:background="@color/color_common_text" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -189,7 +193,6 @@
                         android:id="@+id/rl_main_footer_gps_on"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="25dp"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="10dp"
                         android:layout_weight="1"
@@ -206,29 +209,25 @@
                             android:id="@+id/tv_main_footer_gps_on"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="5dp"
                             android:layout_marginLeft="5dp"
-                            android:layout_toEndOf="@+id/iv_main_circle_gps_on"
                             android:layout_toRightOf="@+id/iv_main_circle_gps_on"
-                            android:text="@string/record"
-                            android:textColor="@color/text_color_black" />
+                            android:text="RECORD"
+                            android:textColor="@color/color_common_text" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/tv_main_footer_gps_on"
-                            android:layout_marginStart="11dp"
                             android:layout_marginLeft="11dp"
                             android:layout_marginTop="3dp"
-                            android:text="@string/with_n_gps_data"
-                            android:textColor="@color/text_color_black" />
+                            android:text=" With \n GPS data"
+                            android:textColor="@color/color_common_text" />
                     </RelativeLayout>
 
                     <RelativeLayout
                         android:id="@+id/rl_main_footer_gps_off"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="15dp"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="10dp"
                         android:layout_toRightOf="@+id/rl_main_footer_gps_on"
@@ -246,29 +245,25 @@
                             android:id="@+id/tv_main_footer_gps_off"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="5dp"
                             android:layout_marginLeft="5dp"
-                            android:layout_toEndOf="@+id/iv_main_circle_gps_off"
                             android:layout_toRightOf="@+id/iv_main_circle_gps_off"
-                            android:text="@string/record"
-                            android:textColor="@color/text_color_black" />
+                            android:text="RECORD"
+                            android:textColor="@color/color_common_text" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/tv_main_footer_gps_off"
-                            android:layout_marginStart="11dp"
                             android:layout_marginLeft="11dp"
                             android:layout_marginTop="3dp"
-                            android:text="@string/without_n_gps_data"
-                            android:textColor="@color/text_color_black" />
+                            android:text=" Without \n GPS data"
+                            android:textColor="@color/color_common_text" />
                     </RelativeLayout>
 
                     <RelativeLayout
                         android:id="@+id/rl_main_footer_event"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="15dp"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="10dp"
                         android:layout_toRightOf="@+id/rl_main_footer_gps_off"
@@ -286,80 +281,29 @@
                             android:id="@+id/tv_main_footer_event"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="5dp"
                             android:layout_marginLeft="5dp"
-                            android:layout_toEndOf="@+id/iv_main_footer_event"
                             android:layout_toRightOf="@+id/iv_main_footer_event"
-                            android:text="@string/event"
-                            android:textColor="@color/text_color_black" />
+                            android:text="EVENT"
+                            android:textColor="@color/color_common_text" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/tv_main_footer_event"
-                            android:layout_marginStart="11dp"
                             android:layout_marginLeft="11dp"
                             android:layout_marginTop="3dp"
-                            android:text="@string/write_log"
-                            android:textColor="@color/text_color_black" />
+                            android:text=" Write log"
+                            android:textColor="@color/color_common_text" />
                     </RelativeLayout>
                 </LinearLayout>
             </RelativeLayout>
-
-            <Button
-                android:id="@+id/button_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/ll_current_layout"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginStart="152dp"
-                android:layout_marginLeft="152dp"
-                android:layout_marginTop="52dp"
-                android:layout_marginEnd="171dp"
-                android:layout_marginRight="171dp"
-                android:text="1" />
-
-            <Button
-                android:id="@+id/button_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/button_1"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginStart="152dp"
-                android:layout_marginLeft="152dp"
-                android:layout_marginTop="52dp"
-                android:layout_marginEnd="171dp"
-                android:layout_marginRight="171dp"
-                android:text="2" />
-
-            <Button
-                android:id="@+id/button_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/button_2"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginStart="153dp"
-                android:layout_marginLeft="153dp"
-                android:layout_marginTop="54dp"
-                android:layout_marginEnd="170dp"
-                android:layout_marginRight="170dp"
-                android:text="3" />
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/progress_layout_main"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/splash_background"
+            android:background="@color/color_common_background"
             android:orientation="vertical"
             android:visibility="gone">
 
@@ -370,6 +314,5 @@
                 android:layout_centerInParent="true"
                 android:visibility="gone" />
         </RelativeLayout>
-
     </FrameLayout>
 </layout>

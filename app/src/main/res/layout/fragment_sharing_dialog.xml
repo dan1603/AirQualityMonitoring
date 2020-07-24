@@ -8,15 +8,15 @@
         style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/splash_background">
+        android:background="@color/color_common_background">
 
         <TextView
             android:id="@+id/tv_title_sharing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="@string/choose_social_for_sharing"
-            android:textColor="@color/colorWhite"
+            android:text="Choose social for sharing"
+            android:textColor="@color/dialog_selector_white"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -61,8 +61,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1.0"
-                android:text="@string/cancel"
-                android:textColor="@color/soft_blue" />
+                android:text="Cancel"
+                android:textColor="@color/dialog_selector_blue" />
         </LinearLayout>
     </RelativeLayout>
 

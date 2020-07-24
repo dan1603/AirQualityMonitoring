@@ -9,7 +9,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/splash_background">
+            android:background="@color/color_common_background">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -32,7 +32,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/text_color_black" />
+                    android:background="@color/color_common_text" />
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -49,12 +49,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginStart="5dp"
                         android:layout_marginLeft="5dp"
-                        android:layout_toEndOf="@+id/iv_list_delete_all_files"
                         android:layout_toRightOf="@+id/iv_list_delete_all_files"
-                        android:text="@string/delete_all"
-                        android:textColor="@color/soft_blue" />
+                        android:text="DELETE ALL"
+                        android:textColor="@color/dialog_selector_blue" />
                 </RelativeLayout>
             </RelativeLayout>
         </RelativeLayout>
@@ -64,7 +62,7 @@
             android:id="@+id/progress_layout_list_files"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/splash_background"
+            android:background="@color/color_common_background"
             android:orientation="vertical"
             android:visibility="gone">
 

@@ -8,19 +8,18 @@
         style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/splash_background">
+        android:background="@color/color_common_background">
         <TextView
             android:id="@+id/tv_dialog_share_or_open_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/choose_option"
+            android:text="Choose option"
             android:textStyle="bold"
             android:textSize="16sp"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/dialog_selector_white"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginStart="20dp" />
+            android:layout_marginBottom="10dp"/>
 
         <TextView
             android:id="@+id/tv_dialog_share_or_open_body"
@@ -28,9 +27,9 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:textColor="@color/text_color_black"
+            android:textColor="@color/color_common_text"
             android:layout_below="@id/tv_dialog_share_or_open_title"
-            android:text="@string/do_you_want_share_file_or_nopen_file_and_watch_content"
+            android:text="Do you want share file or\nopen file and watch content?"
             android:textSize="14sp" />
 
         <LinearLayout
@@ -47,26 +46,26 @@
                 android:id="@+id/btn_dialog_share_or_open_cancel"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
-                android:textColor="@color/soft_blue"
+                android:textColor="@color/dialog_selector_blue"
                 android:layout_height="wrap_content"
                 android:layout_weight="1.0"
-                android:text="@string/cancel" />
+                android:text="Cancel" />
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_dialog_share_or_open_share"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
-                android:textColor="@color/soft_blue"
+                android:textColor="@color/dialog_selector_blue"
                 android:layout_height="wrap_content"
                 android:layout_weight="1.0"
-                android:text="@string/share" />
+                android:text="Share" />
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_dialog_share_or_open_open"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
-                android:textColor="@color/soft_blue"
+                android:textColor="@color/dialog_selector_blue"
                 android:layout_height="wrap_content"
                 android:layout_weight="1.0"
-                android:text="@string/open" />
+                android:text="Open" />
         </LinearLayout>
     </RelativeLayout>
 
@@ -77,5 +76,4 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:visibility="gone" />
-
 </FrameLayout>

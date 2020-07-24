@@ -11,13 +11,12 @@
 
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/splash_background">
-
+            android:background="@color/color_common_background">
             <RelativeLayout
-                android:id="@+id/header"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@color/splash_background"
+                android:id="@+id/header"
+                android:background="@color/color_common_background"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -39,8 +38,8 @@
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:layout_centerVertical="true"
-                            android:text="@string/address_date_time"
-                            android:textColor="@color/colorWhite"
+                            android:text="Address, date, time"
+                            android:textColor="@color/dialog_selector_white"
                             android:textSize="14sp"
                             android:textStyle="bold" />
 
@@ -50,7 +49,8 @@
                         android:id="@+id/v_item_list_pm10"
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
-                        android:background="@color/text_color_black" />
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_common_text" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -63,8 +63,8 @@
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:layout_centerVertical="true"
-                            android:text="@string/pm10"
-                            android:textColor="@color/colorWhite"
+                            android:text="PM10"
+                            android:textColor="@color/dialog_selector_white"
                             android:textSize="14sp"
                             android:textStyle="bold" />
 
@@ -74,7 +74,8 @@
                         android:id="@+id/v_item_list_kml_file"
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
-                        android:background="@color/text_color_black" />
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_common_text" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -87,8 +88,8 @@
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:layout_centerVertical="true"
-                            android:text="@string/pm2_5"
-                            android:textColor="@color/colorWhite"
+                            android:text="PM2.5"
+                            android:textColor="@color/dialog_selector_white"
                             android:textSize="14sp"
                             android:textStyle="bold" />
                     </RelativeLayout>
@@ -97,24 +98,23 @@
                         android:id="@+id/v_item_list_delete"
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
-                        android:background="@color/text_color_black" />
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_common_text" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="5"
                         android:orientation="horizontal">
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
                             android:layout_centerVertical="true"
-                            android:text="@string/edit_list_n_history"
-                            android:textColor="@color/colorWhite"
+                            android:layout_centerHorizontal="true"
+                            android:text="Edit list\n history"
+                            android:textColor="@color/dialog_selector_white"
                             android:textSize="10sp"
-                            android:textStyle="bold"
-                            tools:ignore="SmallSp" />
+                            android:textStyle="bold"/>
                     </RelativeLayout>
 
                 </LinearLayout>
@@ -124,15 +124,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="1dp"
                     android:layout_alignParentBottom="true"
-                    android:background="@color/text_color_black" />
+                    android:background="@color/color_common_text" />
 
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_above="@+id/rl_list_delete_all"
-                android:layout_below="@+id/header">
+                android:layout_below="@+id/header"
+                android:layout_above="@+id/rl_list_delete_all">
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_list_files"
@@ -150,7 +150,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/text_color_black" />
+                    android:background="@color/color_common_text" />
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -167,12 +167,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginStart="5dp"
                         android:layout_marginLeft="5dp"
-                        android:layout_toEndOf="@+id/iv_list_delete_all"
                         android:layout_toRightOf="@+id/iv_list_delete_all"
-                        android:text="@string/delete_all"
-                        android:textColor="@color/soft_blue" />
+                        android:text="DELETE ALL"
+                        android:textColor="@color/dialog_selector_blue" />
                 </RelativeLayout>
             </RelativeLayout>
         </RelativeLayout>
@@ -182,7 +180,7 @@
             android:id="@+id/progress_layout_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/splash_background"
+            android:background="@color/color_common_background"
             android:orientation="vertical"
             android:visibility="gone">
 

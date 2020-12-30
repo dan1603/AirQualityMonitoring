@@ -26,7 +26,7 @@
     <string name="without_n_gps_data">Without \n GPS data</string>
     <string name="event">EVENT</string>
     <string name="write_log">Write log</string>
-    <string name="gps_is_settings">GPS is settings</string>
+    <string name="gps_in_settings">GPS in settings</string>
     <string name="gps_is_disabled_do_you_want_to_go_to_settings_menu">GPS is disabled. Do you want to go to settings menu?</string>
     <string name="turn_on">Turn on</string>
     <string name="choose_social_for_sharing">Choose social for sharing</string>
@@ -34,4 +34,5 @@
     <string name="close">Close</string>
     <string name="attention">Attention!</string>
     <string name="cancel">Cancel</string>
+    <string name="attention_text">Attention!</string>
 </resources>

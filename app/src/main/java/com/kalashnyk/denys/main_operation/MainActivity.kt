@@ -1,16 +1,14 @@
 package com.kalashnyk.denys.main_operation
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import com.example.myapplication.R
+import com.example.myapplication.databinding.ContainerDataBinding
+import com.kalashnyk.denys.main_operation.base.BaseActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity<ContainerDataBinding>() {
 
+    override fun getLayoutId() = R.layout.activity_main
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
+    override fun setupViewLogic(binder: ContainerDataBinding) {
 
     }
 

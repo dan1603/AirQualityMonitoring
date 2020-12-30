@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_common_background">
+        <TextView
+            android:id="@+id/tv_title_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/attention_text"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/dialog_selector_white"
+            android:layout_margin="20dp" />
+
+        <TextView
+            android:id="@+id/tv_dialog_text_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/color_common_text"
+            android:layout_below="@id/tv_title_dialog"
+            android:text="Do you really want to delete all files? This operation can not be undone."
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+        <FrameLayout
+            android:id="@+id/dialog_custom_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dialog_text_body"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/dialog_buttons_container"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/dialog_custom_layout"
+            android:measureWithLargestChild="true"
+            android:orientation="horizontal"
+            android:paddingTop="0dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_dialog_first"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:textColor="@color/dialog_selector_blue"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:visibility="gone"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_dialog_second"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:textColor="@color/dialog_selector_blue"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:visibility="gone"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_dialog_third"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:textColor="@color/dialog_selector_blue"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress_in_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

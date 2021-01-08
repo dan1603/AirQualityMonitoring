@@ -4,7 +4,6 @@ import android.annotation.TargetApi
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.widget.Toast
 import android.widget.Toolbar
 import androidx.annotation.LayoutRes
 import androidx.annotation.RequiresApi
@@ -12,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
 import com.example.myapplication.R
 import com.kalashnyk.denys.utils.*
 

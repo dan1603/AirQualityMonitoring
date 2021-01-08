@@ -2,12 +2,15 @@ package com.kalashnyk.denys.main_operation.fragments.main_fragment
 
 import android.os.Bundle
 import android.view.View
+import androidx.fragment.app.viewModels
 import com.example.myapplication.R
 import com.example.myapplication.databinding.MainDataBinding
 import com.kalashnyk.denys.main_operation.base.BaseFragment
 import com.kalashnyk.denys.main_operation.base.Dialog
 
 class MainFragment : BaseFragment<MainDataBinding>() {
+
+    private val viewModel: MainViewModel by viewModels()
 
     override fun getLayoutId() = R.layout.fragment_main
 

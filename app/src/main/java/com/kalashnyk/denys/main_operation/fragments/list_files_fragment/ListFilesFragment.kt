@@ -2,18 +2,21 @@ package com.kalashnyk.denys.main_operation.fragments.list_files_fragment
 
 import android.os.Bundle
 import android.view.View
-import androidx.databinding.ViewDataBinding
+import androidx.fragment.app.viewModels
 import com.example.myapplication.R
+import com.example.myapplication.databinding.ListFilesDataBinding
 import com.kalashnyk.denys.main_operation.base.BaseFragment
 import com.kalashnyk.denys.main_operation.base.Dialog
 import kotlinx.android.synthetic.main.fragment_list_files.*
 
 
-class ListFilesFragment : BaseFragment<ViewDataBinding>() {
+class ListFilesFragment : BaseFragment<ListFilesDataBinding>() {
+
+    private val viewModel: ListFilesViewModel by viewModels()
 
     override fun getLayoutId() = R.layout.fragment_list_files
 
-    override fun setupViewLogic(binder: ViewDataBinding) {
+    override fun setupViewLogic(binder: ListFilesDataBinding) {
 
     }
 

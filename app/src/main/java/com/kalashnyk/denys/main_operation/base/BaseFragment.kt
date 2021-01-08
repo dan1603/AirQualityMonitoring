@@ -63,13 +63,6 @@ abstract class BaseFragment<V : ViewDataBinding> : Fragment() {
     protected fun getBaseActivity() : BaseActivity<*> = activity as BaseActivity<*>
 
     /**
-     *  Fragments should return their viewmodel from this method if they have one
-     */
-    protected open fun getViewModel() : ViewModel? {
-        return null
-    }
-
-    /**
      *
      */
     protected fun showToast(text: String) = activity?.showToast(text)

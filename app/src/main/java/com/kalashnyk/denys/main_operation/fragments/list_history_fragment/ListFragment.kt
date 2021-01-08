@@ -2,17 +2,20 @@ package com.kalashnyk.denys.main_operation.fragments.list_history_fragment
 
 import android.os.Bundle
 import android.view.View
-import androidx.databinding.ViewDataBinding
+import androidx.fragment.app.viewModels
 import com.example.myapplication.R
+import com.example.myapplication.databinding.ListDataBinding
 import com.kalashnyk.denys.main_operation.base.BaseFragment
 import com.kalashnyk.denys.main_operation.base.Dialog
 import kotlinx.android.synthetic.main.fragment_list.*
 
-class ListFragment : BaseFragment<ViewDataBinding>() {
+class ListFragment : BaseFragment<ListDataBinding>() {
+
+    private val viewModel: ListViewModel by viewModels()
 
     override fun getLayoutId() = R.layout.fragment_list
 
-    override fun setupViewLogic(binder: ViewDataBinding) {
+    override fun setupViewLogic(binder: ListDataBinding) {
 
     }
 
